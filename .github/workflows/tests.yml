@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Python tests
         run: |
-          pytest
+          pytest || test $? -eq 5
 
       - name: Execute Jupyter notebooks
         run: |
